@@ -2,7 +2,6 @@ library(testthat)
 
 ########### 
 # Case Study 01
-context("Case Study 01")
 
 # Case study script
 context("Case Study 01 - File Exists")
@@ -16,10 +15,12 @@ context("Case Study 01 - File runs")
 source(f_cs01)
 
 context("Case Study 01 - Results")
+
 test_that("petal_length_mean",{
   expect_true(exists("petal_length_mean"))
   expect_equal(petal_length_mean, 3.758)
 })
+
 
 ########### 
 # Case Study 02
