@@ -1,4 +1,7 @@
 library(testthat)
+
+setwd("../../")
+
 ##########
 # Initial Commit
 # 
@@ -17,7 +20,7 @@ test_that(paste0("README has been edited"),{
 
 # Case study script
 context("Case Study 01 - File Exists")
-f_cs01="../../week_01/case_study_01.R"
+f_cs01="week_01/case_study_01.R"
 
 test_that(paste0(f_cs01, " file exists"),{
   expect_true(file.exists(f_cs01))
